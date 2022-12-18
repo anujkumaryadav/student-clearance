@@ -9,11 +9,6 @@ if(empty($_SESSION['matric_no']))
     else{
 	}
       
-    /* 
-    
-     Sejal Commit
-    
-    */
 
     //get neccesary session details 
     $ID = $_SESSION["ID"];
@@ -125,9 +120,6 @@ $current_date = date('Y-m-d H:i:s');
                     <span class="m-r-sm text-muted welcome-message">Welcome <?php echo $rowaccess['fullname']; ?></span>
                 </li>
                 <li class="dropdown">
-                   
-                    
-
 
                 <li>
                     <a href="logout.php">
