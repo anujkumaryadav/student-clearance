@@ -44,7 +44,7 @@ $_SESSION['error']='Editing Was Not Successful';
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Edit User Profile|Admin Dashboard</title>
- <link rel="icon" type="image/png" sizes="16x16" href="../images/favicon.png">
+ <link rel="icon" type="image/png" sizes="16x16" href="./images/favicon.png">
   <!-- Google Font: Source Sans Pro -->
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
   <!-- Font Awesome -->
@@ -104,7 +104,7 @@ $_SESSION['error']='Editing Was Not Successful';
   <aside class="main-sidebar sidebar-dark-primary elevation-4">
     <!-- Brand Logo -->
     <a href="index.php" class="brand-link">
-      <img src="../images/logo.png" alt=" Logo"  width="200" height="111" class="" style="opacity: .8">
+      <img src="./images/logo.png" alt=" Logo"  width="200" height="111" class="" style="opacity: .8">
 	  <span class="brand-text font-weight-light"></span>
     </a>
 

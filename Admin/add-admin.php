@@ -63,7 +63,7 @@ VALUES ('$username','$password','$designation','$fullname','$email','Active','up
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Create User|Dashboard</title>
- <link rel="icon" type="image/png" sizes="16x16" href="../images/favicon.png">
+ <link rel="icon" type="image/png" sizes="16x16" href="./images/favicon.png">
   <!-- Google Font: Source Sans Pro -->
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
   <!-- Font Awesome -->
@@ -123,7 +123,7 @@ VALUES ('$username','$password','$designation','$fullname','$email','Active','up
   <aside class="main-sidebar sidebar-dark-primary elevation-4">
     <!-- Brand Logo -->
     <a href="index.php" class="brand-link">
-      <img src="../images/logo.png" alt=" Logo"  width="200" height="111" class="" style="opacity: .8">
+      <img src="./images/favicon.png" alt=" Logo"  width="110" height="110" class="" style="opacity: .8">
 	  <span class="brand-text font-weight-light"></span>
     </a>
 
@@ -223,13 +223,15 @@ VALUES ('$username','$password','$designation','$fullname','$email','Active','up
 				  <div class="form-group">
                     <label for="exampleInputPassword1">Designation</label>
                     <select name="cmddesignation" id="select" class="form-control" required="">
-    <option value="Select Designation">Select Designation</option>
-   <option value="Super Admin">Super Admin</option>
-   <option value="Librarian">Librarian</option>
-   <option value="Bursar">Bursar</option>
-   <option value="Sport Director">Sport Director</option>
+                       <option value="Select Designation">Select Designation</option>
+                       <option value="Super Admin">Super Admin</option>
+                       <option value="Librarian">Librarian</option>
+                       <option value="workshop">Workshop</option>
+                       <option value="scholarship">Scholarship</option>
+                       <option value="class-teacher">Class Teacher</option>
+                       <option value="Sport Director">Sport</option>
 
-   </select> 
+                    </select> 
                      </div>
                   <div class="form-group">
                     <label for="exampleInputPassword1">Email</label>

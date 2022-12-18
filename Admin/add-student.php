@@ -79,7 +79,7 @@ $_SESSION['error'] ='Problem registering student';
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Register Student|Dashboard</title>
- <link rel="icon" type="image/png" sizes="16x16" href="../images/favicon.png">
+ <link rel="icon" type="image/png" sizes="16x16" href="./images/favicon.png">
   <!-- Google Font: Source Sans Pro -->
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
   <!-- Font Awesome -->
@@ -139,7 +139,7 @@ $_SESSION['error'] ='Problem registering student';
   <aside class="main-sidebar sidebar-dark-primary elevation-4">
     <!-- Brand Logo -->
     <a href="index.php" class="brand-link">
-      <img src="../images/logo.png" alt=" Logo"  width="200" height="111" class="" style="opacity: .8">
+      <img src="./images/favicon.png" alt=" Logo"  width="110" height="110" class="" style="opacity: .8">
 	  <span class="brand-text font-weight-light"></span>
     </a>
 
@@ -225,13 +225,13 @@ $_SESSION['error'] ='Problem registering student';
                     <input type="text" class="form-control" name="txtfullname" id="exampleInputEmail1" size="77" value="<?php if (isset($_POST['txtfullname']))?><?php echo $_POST['txtfullname']; ?>" placeholder="Enter Fullname">
                   </div>
 				   <div class="form-group">
-                    <label for="exampleInputEmail1">Matric No. </label>
-                    <input type="text" class="form-control" name="txtmatric_no" id="exampleInputEmail1" size="77" value="<?php if (isset($_POST['txtmatric_no']))?><?php echo $_POST['txtmatric_no']; ?>" placeholder="Enter Matric No.">
+                    <label for="exampleInputEmail1">PRN No </label>
+                    <input type="text" class="form-control" name="txtmatric_no" id="exampleInputEmail1" size="77" value="<?php if (isset($_POST['txtmatric_no']))?><?php echo $_POST['txtmatric_no']; ?>" placeholder="Enter PRN No">
                   </div>
 
                   <div class="form-group">
-                    <label for="exampleInputEmail1">Phone No. </label>
-                    <input type="text" class="form-control" name="txtphone" id="exampleInputEmail1" size="77" value="<?php if (isset($_POST['txtphone']))?><?php echo $_POST['txtphone']; ?>" placeholder="Enter Phone">
+                    <label for="exampleInputEmail1">Mobile No </label>
+                    <input type="text" class="form-control" name="txtphone" id="exampleInputEmail1" size="77" value="<?php if (isset($_POST['txtphone']))?><?php echo $_POST['txtphone']; ?>" placeholder="Enter Mobile No">
                   </div>
 
                   <div class="form-group">
@@ -257,19 +257,19 @@ $sessions = $stmt->fetchAll();
                     <label for="exampleInputPassword1">Faculty</label>
                     <select name="cmdfaculty" id="select" class="form-control" required="">
     <option value="Select faculty">Select faculty</option>
-   <option value="Science">Science</option>
+   <!--<option value="Science">Science</option>-->
    <option value="Engineering">Engineering</option>
-   <option value="Social Science">Social Science</option>
+   <!--<option value="Social Science">Social Science</option>-->
    </select>  
      </div>
 				  <div class="form-group">
                     <label for="exampleInputPassword1">Department</label>
                     <select name="cmddept" id="select" class="form-control" required="">
     <option value="Select Department">Select Department</option>
-   <option value="Computer Science">Computer Science</option>
+   <option value="Computer Science">Computer Engineering</option>
+   <option value="Civil Engineering">Civil Engineering</option>
    <option value="Electrical Engineering">Electrical Engineering</option>
-   <option value="Business Management">Business Management</option>
-   <option value="Information Technology">Information Technology</option>
+   <option value="Mechenical Technology">Mechenical Engineering</option>
    </select>  
     </div>
 		   </div>

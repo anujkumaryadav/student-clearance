@@ -75,10 +75,7 @@ $_SESSION['error']=' Wrong Username and Password';
   <div class="login-logo">
     <a href="#">
       <b>
-        <img src="./images/logo.png" width="700" height="100" class="center">
-
-        
-
+        <img src="./images/logo.png" class="center">
           <span class="style4">
             <!--style4-->
           </span>

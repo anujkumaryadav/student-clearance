@@ -25,7 +25,7 @@ $row= mysqli_fetch_array($result);
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Student Clearance|Dashboard</title>
-<link rel="icon" type="image/png" sizes="16x16" href="../images/favicon.png">
+<link rel="icon" type="image/png" sizes="16x16" href="./images/favicon.png">
   <!-- Google Font: Source Sans Pro -->
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
   <!-- Font Awesome -->
@@ -108,7 +108,7 @@ else {return false;
   <aside class="main-sidebar sidebar-dark-primary elevation-4">
     <!-- Brand Logo -->
     <a href="#" class="brand-link">
-      <img src="../images/logo.png" alt=" Logo"  width="200" height="111" class="" style="opacity: .8">
+      <img src="./images/favicon.png" alt=" Logo"  width="110" height="110" class="" style="opacity: .8">
 	        <span class="brand-text font-weight-light">  </span>
     </a>
 
@@ -192,9 +192,11 @@ else {return false;
                     <thead>
                     <th width="10%"><div align="center">Fullname</div></th>
 							          <th width="7%"><div align="center">Photo</div></th>
-                        <th width="5%"><div align="center">Matric No</div></th>
-                        <th width="5%"><div align="center">Hostel Status</div></th>
-                        <th width="6%"><div align="center">Sport Status</div></th>
+                        <th width="5%"><div align="center">PRN No</div></th>
+                        <th width="5%"><div align="center">Hostel</div></th>
+                        <th width="6%"><div align="center">Sport</div></th>
+                        <th width="6%"><div align="center">Library</div></th>
+                        <th width="5%"><div align="center">Scholarship</div></th>
 						           <th width="5%"><div align="center">Student Affairs Status</div></th>
                         
 				     						    </tr>
