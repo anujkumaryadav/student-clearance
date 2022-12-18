@@ -9,6 +9,11 @@ if(empty($_SESSION['matric_no']))
     else{
 	}
       
+    /* 
+    
+     Sejal Commit
+    
+    */
 
     //get neccesary session details 
     $ID = $_SESSION["ID"];
