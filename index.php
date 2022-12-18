@@ -12,7 +12,7 @@ if(empty($_SESSION['matric_no']))
 
     //get neccesary session details 
     $ID = $_SESSION["ID"];
-    $matric_no = $_SESSION["matric_no"];
+    $PRN_no = $_SESSION["PRN_no"];
     $dept = $_SESSION['dept'];
     $faculty = $_SESSION['faculty'];
 	
@@ -101,7 +101,6 @@ $current_date = date('Y-m-d H:i:s');
 			   ?>
 			   
 	       </ul>
-		   
 
         </div>
     </nav>
@@ -125,7 +124,7 @@ $current_date = date('Y-m-d H:i:s');
                     <a href="logout.php">
                         <i class="fa fa-sign-out"></i> Log out
                     </a>
-                </li>
+                </li>     
                
             </ul>
 
