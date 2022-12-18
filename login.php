@@ -77,7 +77,7 @@ $_SESSION['error']=' Must Fill-in All Fields';
         <div>
             <div>
 
-                <h5 class="style3">Online Student Clearance System..</h5>
+                <h5 class="style3">Online Student Clearance System.</h5>    
                 <h1 class="logo-name"><a href="index.php"><img src="images/logo.png" alt="onlineclearance" width="246" height="111" border="0"></a></h1>
             </div>
            

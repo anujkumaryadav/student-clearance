@@ -108,9 +108,6 @@ $_SESSION['error']='Editing Was Not Successful';
 <span class="m-r-sm text-muted welcome-message">Welcome to <?php echo $rowaccess['fullname'];?></span>
                 </li>
                 <li class="dropdown">
-                   
-                    
-
 
                 <li>
                     <a href="logout.php">

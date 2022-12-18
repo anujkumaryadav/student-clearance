@@ -1,3 +1,4 @@
+*/ prem /*
 <?php
 session_start();
 error_reporting(0);
@@ -11,8 +12,7 @@ if(empty($_SESSION['matric_no']))
 	}
       
 $matric_no = $_SESSION["matric_no"];
-
-                 
+        
 $sql = "select * from students where matric_no='$matric_no'"; 
 $result = $conn->query($sql);
 $rowaccess = mysqli_fetch_array($result);
