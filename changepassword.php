@@ -13,7 +13,7 @@ if(empty($_SESSION['matric_no']))
       
 $matric_no = $_SESSION["matric_no"];
 
-                 
+       /*sejal*/          
 $sql = "select * from students where matric_no='$matric_no'"; 
 $result = $conn->query($sql);
 $rowaccess = mysqli_fetch_array($result);
