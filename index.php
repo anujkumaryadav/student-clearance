@@ -237,11 +237,12 @@ $tot_fee=$row_fee['tot_fee'];
                 <td width="1237"><table border="0" align="center" class="table table-hover no-margins">
                   <thead>
                     <tr>
-                    
-                      <th style="color:blue;text-align:center;" width="30%"><div align="center"><span class="style1">class teacher/HOD </span></div></th>
+                    <th style="color:blue;text-align:center;" width="30%"><div align="center"><span class="style1">class teacher/HOD </span></div></th>
 					  <th style="color:blue;text-align:center;"width="30%"><div align="center"><span class="style1">Laibrary</span></div></th>
                       <th style="color:blue;text-align:center;" width="63%"><div align="center" class="style1">workshop</div></th>
-					   <th style="color:blue;text-align:center;" width="63%"><div align="center" class="style1"> sports </div></th>
+                      <th style="color:blue;text-align:center;" width="63%"><div align="center" class="style1"> sports </div></th>
+                      <th style="color:blue;text-align:center;" width="63%"><div align="center" class="style1"> scholarship Department </div></th>
+                      <th style="color:blue;text-align:center;" width="63%"><div align="center" class="style1"> Account Department </div></th>
                       
                     </tr>
                   </thead>
