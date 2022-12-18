@@ -124,7 +124,7 @@ $current_date = date('Y-m-d H:i:s');
                     <a href="logout.php">
                         <i class="fa fa-sign-out"></i> Log out
                     </a>
-                </li>     
+                </li>
                
             </ul>
 
@@ -237,10 +237,12 @@ $tot_fee=$row_fee['tot_fee'];
                 <td width="1237"><table border="0" align="center" class="table table-hover no-margins">
                   <thead>
                     <tr>
-                      <th width="30%"><div align="center"><span class="style1">Fee </span></div></th>
-					  <th width="30%"><div align="center"><span class="style1">Hostel</span></div></th>
-                      <th width="63%"><div align="center" class="style1">Sport</div></th>
-					   <th width="63%"><div align="center" class="style1">Student Affairs</div></th>
+                    
+                      <th style="color:blue;text-align:center;" width="30%"><div align="center"><span class="style1">class teacher/HOD </span></div></th>
+					  <th style="color:blue;text-align:center;"width="30%"><div align="center"><span class="style1">Laibrary</span></div></th>
+                      <th style="color:blue;text-align:center;" width="63%"><div align="center" class="style1">workshop</div></th>
+					   <th style="color:blue;text-align:center;" width="63%"><div align="center" class="style1"> sports </div></th>
+                      
                     </tr>
                   </thead>
                   <tbody>
