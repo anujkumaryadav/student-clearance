@@ -30,7 +30,7 @@ $current_date = date('Y-m-d H:i:s');
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Clearance Letter |Arthur Javis University</title>
+    <title> Clearance Letter | Bajaj Institute of Technology, Wardha</title>
 
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="font-awesome/css/font-awesome.css" rel="stylesheet">
@@ -64,8 +64,10 @@ $current_date = date('Y-m-d H:i:s');
                           <div class="text-center article-title">
                             <p class="text-muted">&nbsp;</p>
                             <h1>
-                                    ARTHUR JAVIS UNIVERISTY, CALABAR <img src="<?php echo $rowaccess['photo']; ?>" width="157" height="175"></h1>
+                                    <img src="./images/favicon.png" alt=" Logo"  width="110" height="110" class="" style="opacity: .8">
+                                    Bajaj Institute of Technology, Wardha 
                           </div>
+                          <img src="<?php echo $rowaccess['photo']; ?>" width="157" height="175"></h1>
                             <p align="center" class="style1">CLEARANCE LETTER </p>
                             <p>&nbsp;</p>
                             <p>

@@ -129,7 +129,7 @@ if(isset($_POST["btnpassword"])){
   <aside class="main-sidebar sidebar-dark-primary elevation-4">
     <!-- Brand Logo -->
     <a href="index.php" class="brand-link">
-      <img src="../images/logo.png" alt=" Logo"  width="200" height="111" class="" style="opacity: .8">
+      <img src="./images/favicon.png" alt=" Logo"  width="110" height="110" class="" style="opacity: .8">
       <span class="brand-text font-weight-light"></span>
     </a>
 
