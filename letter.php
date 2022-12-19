@@ -78,15 +78,17 @@ $current_date = date('Y-m-d H:i:s');
                           
                               <div align="justify">
                                   <ul>
-                                    <li>Hostel </li>
-                                    <li>Student Affairs</li>
-                                    <li>Sport </li>
-                                    <li>Bursary </li>
+                                    <li>class teacher/HOD </li>
+                                    <li>Laibrary </li>
+                                    <li>workshop </li>
+                                    <li>sports </li>
+                                    <li>scholarship Department </li>
+                                    <li>Account Department </li>
                                   </ul>
                           </div>
                             <p align="justify">Your Details remains:</p>
                             <p align="justify"><strong>FULLNAME:</strong> <?php echo $rowaccess['fullname']; ?></p>
-                            <p align="justify"><strong>MATRIC NUMBER:</strong> <?php echo $rowaccess['matric_no']; ?></p>
+                            <p align="justify"><strong>PRN NUMBER:</strong> <?php echo $rowaccess['matric_no']; ?></p>
                             <p align="justify"><strong>FACULTY:</strong> <?php echo $rowaccess['faculty']; ?></p>
                             <p align="justify"><strong>DEPARTMENT:</strong> <?php echo $rowaccess['dept']; ?></p>
                             <p align="justify">&nbsp;</p>
