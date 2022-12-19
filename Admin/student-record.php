@@ -212,10 +212,10 @@ $row= mysqli_fetch_array($result);
                 <div class="card-body">
                   <table width="85%" align="center" class="table table-bordered table-striped" id="example1">
                     <thead>
-                      <th width="10%"><div align="center">Fullname</div></th>
+                      <th width="10%"><div align="center">Full Name</div></th>
                       <th width="7%"><div align="center">Photo</div></th>
-                      <th width="5%"><div align="center">Phone</div></th>
-                      <th width="5%"><div align="center">Matric No</div></th>
+                      <th width="5%"><div align="center">Phone No</div></th>
+                      <th width="5%"><div align="center">PRN No</div></th>
                       <th width="5%"><div align="center">Password</div></th>
                       <th width="6%"><div align="center">Faculty</div></th>
                       <th width="5%"><div align="center">Dept</div></th>

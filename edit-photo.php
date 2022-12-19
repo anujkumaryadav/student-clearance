@@ -79,12 +79,12 @@ $_SESSION['error']='Editing Was Not Successful';
   
    
                         <a data-toggle="dropdown" class="dropdown-toggle" href="#">
-                            <span class="clear"><span class="text-muted text-xs block">Matric No: <?php echo $rowaccess['matric_no'];  ?> <b class="caret"></b></span> </span> </a>
+                            <span class="clear"><span class="text-muted text-xs block">PRN No: <?php echo $rowaccess['matric_no'];  ?> <b class="caret"></b></span> </span> </a>
                         <ul class="dropdown-menu animated fadeInRight m-t-xs">
                             
                             <li><a href="logout.php">Logout</a></li>
                         </ul>
-  </div>	
+                    </div>	
 			   <?php
 			   include('sidebar.php');
 			   

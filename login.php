@@ -59,14 +59,19 @@ $_SESSION['error']=' Must Fill-in All Fields';
     <link href="css/style.css" rel="stylesheet">
  <link rel="icon" type="image/png" sizes="16x16" href="images/favicon.png">
  <style type="text/css">
+  .center {
+            margin-left: -150px;
+            width: 700;
+            height: 100;
+        }
 <!--
-.style3 {
-	color: #FF0000;
+/*.style3 {
+	color: #000;
 	font-weight: bold;
 	font-size: 24px;
 }
 .style4 {color: #FF0000}
--->
+-->*/
 
 </style>
 </head>
@@ -77,13 +82,14 @@ $_SESSION['error']=' Must Fill-in All Fields';
         <div>
             <div>
 
-                <h5 class="style3">Online Student Clearance System.</h5>    
-                <h1 class="logo-name"><a href="index.php"><img src="images/logo.png" alt="onlineclearance" width="246" height="111" border="0"></a></h1>
+                <!--<h5 class="style3">Online Student Clearance System.</h5>    -->
+                <h1 class="logo-name">
+                <a href="index.php"><img src="images/logo.png" alt="onlineclearance" class="center"></a></h1>
             </div>
            
             <form class="m-t" role="form" method= "POST" action="">
                 <div class="form-group">
-                    <input type="text" name="txtmatric_no" class="form-control" placeholder="Matric No" required="">
+                    <input type="text" name="txtmatric_no" class="form-control" placeholder="PRN No" required="">
                 </div>
                 <div class="form-group">
                     <input type="password" name="txtpassword" class="form-control" placeholder="Password" required="">
