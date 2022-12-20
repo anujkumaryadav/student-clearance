@@ -18,6 +18,26 @@ $sql = "select * from admin where username='$username'";
 $result = $conn->query($sql);
 $row= mysqli_fetch_array($result);
 
+
+
+
+
+
+
+$in_workshop = $_POST['in_workshop'];
+$in_sport = $_POST['in_sport'];
+$in_library = $_POST['in_library'];
+$in_scholarship = $_POST['in_scholarship'];
+$in_class_incharge = $_POST['in_sport'];
+$total_due = $_POST['total_due'];
+
+$sql = "SELECT * FROM admin WHERE in_workshop='" .$in_workshop . "' and in_sport = '". $in_sport."' and in_library = '". $in_library."' and in_scholarship ='" .$in_scholarship. "' and in_class_incharge".$in_class_incharge;
+
+
+$total_due = $in_workshop + $in_sport + $in_library + $in_scholarship + $in_class_incharge;
+
+
+
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -273,12 +293,20 @@ $row= mysqli_fetch_array($result);
                                                 onClick="return clear_student('<?php echo $row['matric_no']; ?>');"><i
                                                     class="fa fa-check" title="Click to Clear Student"> <span
                                                         class="badge badge-warning">Pending</span></i> </a>
+                                                        <form action="/action_page.php">
+  <label for="in_workshop">Workshop Due:</label>
+  <input type="number" id="in_workshop" name="in_workshop"style="border-radius: 15px;"><br><br>
+  <input type="submit" value="Submit">
+</form>
                                         </div>
 
                                         <?php } ?>
                                     </td>
 
                                     <td>
+
+
+                                    
                                         <?php if (($row['is_sport_approved'])==(('1')))  { ?>
                                         <div align="center"><span class="badge badge-success">Cleared</span></div>
                                         <?php } else {?>
@@ -286,6 +314,11 @@ $row= mysqli_fetch_array($result);
                                                 onClick="return clear_student('<?php echo $row['matric_no']; ?>');"><i
                                                     class="fa fa-check" title="Click to Clear Student"> <span
                                                         class="badge badge-warning">Pending</span></i> </a>
+                                                        <form action="/action_page.php">
+  <label for="in_sport">Sport Due:</label>
+  <input type="number" id="in_sport" name="in_sport" style="border-radius: 15px;"><br><br>
+  <input type="submit" value="Submit">
+</form>
                                         </div>
 
                                         <?php } ?>
@@ -298,6 +331,11 @@ $row= mysqli_fetch_array($result);
                                                 onClick="return clear_student('<?php echo $row['matric_no']; ?>');"><i
                                                     class="fa fa-check" title="Click to Clear Student"> <span
                                                         class="badge badge-warning">Pending</span></i> </a>
+                                                        <form action="/action_page.php">
+  <label for="in_library">Library Due:</label>
+  <input type="number" id="in_library" name="in_library"style="border-radius: 15px;"><br><br>
+  <input type="submit" value="Submit">
+</form>
                                         </div>
 
                                         <?php } ?>
@@ -310,6 +348,11 @@ $row= mysqli_fetch_array($result);
                                                 onClick="return clear_student('<?php echo $row['matric_no']; ?>');"><i
                                                     class="fa fa-check" title="Click to Clear Student"> <span
                                                         class="badge badge-warning">Pending</span></i> </a>
+                                                        <form action="/action_page.php">
+  <label for="in_scholarship">Scholarship Due:</label>
+  <input type="number" id="in_scholarship" name="in_scholarship"style="border-radius: 15px;"><br><br>
+  <input type="submit" value="Submit">
+</form>
                                         </div>
 
                                         <?php } ?>
@@ -323,6 +366,16 @@ $row= mysqli_fetch_array($result);
                                                 onClick="return clear_student('<?php echo $row['matric_no']; ?>');"><i
                                                     class="fa fa-check" title="Click to Clear Student"> <span
                                                         class="badge badge-warning">Pending</span></i> </a>
+                                                        <form action="/action_page.php">
+  <label for="in_classincharge">Class Incharge</label>
+  <input type="number" id="in_classincharge" name="in_classincharge"style="border-radius: 15px;"><br><br>
+  <input type="submit" value="Submit">
+
+  
+</p>
+
+<input readonly="readonly" name="total_due" value="<?php echo $total_due; ?>"> <b>Total Due </b>
+</form>
                                         </div>
 
                                         <?php } ?>
