@@ -47,6 +47,19 @@ INSERT INTO `admin` (`ID`, `username`, `password`, `designation`, `fullname`, `e
 
 -- --------------------------------------------------------
 
+CREATE TABLE `faculty` (
+  `ID` int(3) NOT NULL,
+  `username` varchar(15) NOT NULL,
+  `password` varchar(15) NOT NULL,
+  `designation` varchar(25) NOT NULL,
+  `fullname` varchar(30) NOT NULL,
+  `email` varchar(40) NOT NULL,
+  `status` varchar(10) NOT NULL,
+  `photo` varchar(300) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+INSERT INTO `faculty` (`ID`, `username`, `password`, `designation`, `fullname`, `email`, `status`, `photo`) VALUES 
+(105, 'faculty', 'faculty123', 'librarian', 'Minal Shukla', 'minal@gmail.com', 'Active', 'uploads/default.jpg');
 --
 -- Table structure for table `fee`
 --
@@ -145,6 +158,9 @@ INSERT INTO `tblsession` (`ID`, `session`) VALUES
 ALTER TABLE `admin`
   ADD PRIMARY KEY (`ID`);
 
+
+ALTER TABLE `faculty`
+  ADD PRIMARY KEY (`ID`);
 --
 -- Indexes for table `fee`
 --

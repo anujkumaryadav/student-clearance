@@ -3,7 +3,7 @@ session_start();
 error_reporting(1);
 include('../connect.php');
 
-$username=$_SESSION['admin-username'];
+$username=$_SESSION['faculty-username'];
 date_default_timezone_set('Africa/Lagos');
 $current_date = date('Y-m-d H:i:s');
 
@@ -15,14 +15,14 @@ $password = $_POST['txtpassword'];
 $status = 'Active';
 
 
- $sql = "SELECT * FROM admin WHERE username='" .$username . "' and password = '". $password."' and status = '". $status."'";
+ $sql = "SELECT * FROM faculty WHERE username='" .$username . "' and password = '". $password."' and status = '". $status."'";
     $result = mysqli_query($conn,$sql);
     $row  = mysqli_fetch_array($result);
     
-     $_SESSION["admin-username"] = $row['username'];
+     $_SESSION["faculty-username"] = $row['username'];
   
      $count=mysqli_num_rows($result);
-     if(isset($_SESSION["admin-username"])) {
+     if(isset($_SESSION["faculty-username"])) {
     {       
 
 header("Location: index.php"); 

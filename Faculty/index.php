@@ -2,18 +2,18 @@
 session_start();
 error_reporting(1);
 include('../connect.php');
-if(empty($_SESSION['admin-username']))
+if(empty($_SESSION['faculty-username']))
     {   
     header("Location: login.php"); 
     }
     else{
 	}
       
-$username = $_SESSION["admin-username"];
+$username = $_SESSION["faculty-username"];
 date_default_timezone_set('Africa/Lagos');
 $current_date = date('Y-m-d');
 
- $sql = "select * from admin where username ='$username'"; 
+ $sql = "select * from faculty where username ='$username'"; 
 $result = $conn->query($sql);
 $row2 = mysqli_fetch_array($result);
 
@@ -23,8 +23,8 @@ $row2 = mysqli_fetch_array($result);
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Welcome to Admin Dashboard</title>
- <link rel="icon" type="image/png" sizes="16x16" href="./images/favicon.png">
+  <title>Welcome to faculty Dashboard</title>
+ <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon.png">
   <!-- Google Font: Source Sans Pro -->
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
   <!-- Font Awesome -->
